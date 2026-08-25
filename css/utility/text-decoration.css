@@ -1,0 +1,54 @@
+/* ========================================
+   Text Decoration
+   ======================================== */
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+
+/* ========================================
+   Decoration Style
+   ======================================== */
+
+.decoration-solid {
+  text-decoration-style: solid;
+}
+
+.decoration-dashed {
+  text-decoration-style: dashed;
+}
+
+.decoration-dotted {
+  text-decoration-style: dotted;
+
+}
+
+.decoration-double {
+  text-decoration-style: double;
+}
+
+
+/* ========================================
+   Decoration Thickness
+   ======================================== */
+
+.decoration-1 {
+  text-decoration-thickness: 1px;
+}
+
+.decoration-2 {
+  text-decoration-thickness: 2px;
+}
+
+.decoration-4 {
+  text-decoration-thickness: 4px;
+}

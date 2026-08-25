@@ -1,0 +1,15 @@
+/* ========================================
+   Font Style
+   ======================================== */
+
+.italic {
+  font-style: italic;
+}
+
+.not-italic {
+  font-style: normal;
+}
+
+.oblique {
+  font-style: oblique;
+}

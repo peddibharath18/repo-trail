@@ -1,0 +1,110 @@
+/* ========================================
+   Form Controls
+   ======================================== */
+
+.form-control {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+
+/* ========================================
+   Form Field Sizing
+   ======================================== */
+
+.form-control-sm {
+  min-height: 32px;
+  padding: 0 var(--space-2);
+}
+
+.form-control-md {
+  min-height: 40px;
+  padding: 0 var(--space-3);
+}
+
+.form-control-lg {
+  min-height: 48px;
+  padding: 0 var(--space-4);
+}
+
+
+/* ========================================
+   Placeholder
+   ======================================== */
+
+.form-control::placeholder {
+  color: var(--color-text-muted);
+  opacity: 1;
+}
+
+
+/* ========================================
+   Disabled
+   ======================================== */
+
+.form-control:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+
+/* ========================================
+   Readonly
+   ======================================== */
+
+.form-control:read-only {
+  cursor: default;
+}
+
+
+/* ========================================
+   Select
+   ======================================== */
+
+.form-select {
+  width: 100%;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+
+/* ========================================
+   Checkbox / Radio
+   ======================================== */
+
+.form-check {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.form-check:disabled {
+  cursor: not-allowed;
+}
+
+
+/* ========================================
+   Textarea
+   ======================================== */
+
+.form-textarea {
+  width: 100%;
+  min-height: 100px;
+  font: inherit;
+  color: inherit;
+  resize: vertical;
+}
+
+
+/* ========================================
+   File Input
+   ======================================== */
+
+.form-file {
+  font: inherit;
+  cursor: pointer;
+}

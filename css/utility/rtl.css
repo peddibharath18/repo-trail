@@ -1,0 +1,63 @@
+/* ========================================
+   Direction
+   ======================================== */
+
+.dir-ltr {
+  direction: ltr;
+}
+
+.dir-rtl {
+  direction: rtl;
+}
+
+
+/* ========================================
+   Text Direction
+   ======================================== */
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}
+
+
+/* ========================================
+   Margin - Logical
+   ======================================== */
+
+.ms-auto {
+  margin-inline-start: auto;
+}
+
+.me-auto {
+  margin-inline-end: auto;
+}
+
+
+/* ========================================
+   Padding - Logical
+   ======================================== */
+
+.ps-0 {
+  padding-inline-start: 0;
+}
+
+.pe-0 {
+  padding-inline-end: 0;
+}
+
+
+/* ========================================
+   Border - Logical
+   ======================================== */
+
+.border-start {
+  border-inline-start: 1px solid currentColor;
+}
+
+.border-end {
+  border-inline-end: 1px solid currentColor;
+}

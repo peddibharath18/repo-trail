@@ -1,0 +1,38 @@
+/* ========================================
+   Print Utilities
+   ======================================== */
+
+@media print {
+  .print-hidden {
+    display: none !important;
+  }
+
+  .print-visible {
+    display: block !important;
+  }
+
+  .print-inline {
+    display: inline !important;
+  }
+
+  .print-inline-block {
+    display: inline-block !important;
+  }
+
+  .print-break-before {
+    break-before: page;
+  }
+
+  .print-break-after {
+    break-after: page;
+  }
+
+  .print-break-inside-avoid {
+    break-inside: avoid;
+  }
+
+  .print-color-adjust {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}

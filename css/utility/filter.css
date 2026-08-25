@@ -1,0 +1,43 @@
+/* ========================================
+   Filter
+   ======================================== */
+
+.filter-none {
+  filter: none;
+}
+
+.filter-grayscale {
+  filter: grayscale(100%);
+}
+
+.filter-sepia {
+  filter: sepia(100%);
+}
+
+.filter-blur {
+  filter: blur(4px);
+}
+
+.filter-brightness-75 {
+  filter: brightness(75%);
+}
+
+.filter-brightness-100 {
+  filter: brightness(100%);
+}
+
+.filter-brightness-125 {
+  filter: brightness(125%);
+}
+
+.filter-contrast-75 {
+  filter: contrast(75%);
+}
+
+.filter-contrast-100 {
+  filter: contrast(100%);
+}
+
+.filter-contrast-125 {
+  filter: contrast(125%);
+}
