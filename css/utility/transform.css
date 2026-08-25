@@ -1,0 +1,95 @@
+/* ========================================
+   Transform
+   ======================================== */
+
+.transform-none {
+  transform: none;
+}
+
+
+/* ========================================
+   Scale
+   ======================================== */
+
+.scale-90 {
+  transform: scale(0.9);
+}
+
+.scale-95 {
+  transform: scale(0.95);
+}
+
+.scale-100 {
+  transform: scale(1);
+}
+
+.scale-105 {
+  transform: scale(1.05);
+}
+
+.scale-110 {
+  transform: scale(1.1);
+}
+
+
+/* ========================================
+   Rotate
+   ======================================== */
+
+.rotate-0 {
+  transform: rotate(0deg);
+}
+
+.rotate-45 {
+  transform: rotate(45deg);
+}
+
+.rotate-90 {
+  transform: rotate(90deg);
+}
+
+.rotate-180 {
+  transform: rotate(180deg);
+}
+
+
+/* ========================================
+   Translate X
+   ======================================== */
+
+.translate-x-0 {
+  transform: translateX(0);
+}
+
+.translate-x-1 {
+  transform: translateX(var(--space-1));
+}
+
+.translate-x-2 {
+  transform: translateX(var(--space-2));
+}
+
+.translate-x-4 {
+  transform: translateX(var(--space-4));
+}
+
+
+/* ========================================
+   Translate Y
+   ======================================== */
+
+.translate-y-0 {
+  transform: translateY(0);
+}
+
+.translate-y-1 {
+  transform: translateY(var(--space-1));
+}
+
+.translate-y-2 {
+  transform: translateY(var(--space-2));
+}
+
+.translate-y-4 {
+  transform: translateY(var(--space-4));
+}

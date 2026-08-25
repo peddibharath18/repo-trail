@@ -1,0 +1,100 @@
+/* ========================================
+   Hover
+   ======================================== */
+
+.hover-opacity:hover {
+  opacity: 0.8;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
+.hover-no-underline:hover {
+  text-decoration: none;
+}
+
+.hover-scale-105:hover {
+  transform: scale(1.05);
+}
+
+
+/* ========================================
+   Focus
+   ======================================== */
+
+.focus-outline:focus {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+.focus-outline-none:focus {
+  outline: none;
+}
+
+
+/* ========================================
+   Focus Visible
+   ======================================== */
+
+.focus-visible-outline:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+}
+
+
+/* ========================================
+   Active
+   ======================================== */
+
+.active-opacity:active {
+  opacity: 0.7;
+}
+
+.active-scale-95:active {
+  transform: scale(0.95);
+}
+
+
+/* ========================================
+   Disabled
+   ======================================== */
+
+.disabled-opacity:disabled {
+  opacity: 0.5;
+}
+
+.disabled-cursor:disabled {
+  cursor: not-allowed;
+}
+
+
+/* ========================================
+   Checked
+   ======================================== */
+
+.checked-opacity:checked {
+  opacity: 0.8;
+}
+
+
+/* ========================================
+   Placeholder
+   ======================================== */
+
+.placeholder-opacity::placeholder {
+  opacity: 0.6;
+}
+
+
+/* ========================================
+   First / Last Child
+   ======================================== */
+
+.first-no-border:first-child {
+  border-top: none;
+}
+
+.last-no-border:last-child {
+  border-bottom: none;
+}

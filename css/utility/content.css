@@ -1,0 +1,45 @@
+/* ========================================
+   Content Visibility
+   ======================================== */
+
+.content-visible {
+  content-visibility: visible;
+}
+
+.content-hidden {
+  content-visibility: hidden;
+
+}
+
+.content-auto {
+  content-visibility: auto;
+}
+
+
+/* ========================================
+   Contain
+   ======================================== */
+
+.contain-none {
+  contain: none;
+}
+
+.contain-layout {
+  contain: layout;
+}
+
+.contain-paint {
+  contain: paint;
+}
+
+.contain-size {
+  contain: size;
+}
+
+.contain-content {
+  contain: content;
+}
+
+.contain-strict {
+  contain: strict;
+}
