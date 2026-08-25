@@ -1,27 +1,10 @@
 /* ========================================
-   Will Change
+   Will Change Utilities
    ======================================== */
 
-.will-change-auto {
-  will-change: auto;
-}
-
-.will-change-scroll {
-  will-change: scroll-position;
-}
-
-.will-change-contents {
-  will-change: contents;
-}
-
-.will-change-transform {
-  will-change: transform;
-}
-
-.will-change-opacity {
-  will-change: opacity;
-}
-
-.will-change-transform-opacity {
-  will-change: transform, opacity;
-}
+.will-change-auto { will-change: auto; }
+.will-change-transform { will-change: transform; }
+.will-change-opacity { will-change: opacity; }
+.will-change-scroll, .will-change-scroll-position { will-change: scroll-position; }
+.will-change-contents { will-change: contents; }
+.will-change-transform-opacity { will-change: transform, opacity; }

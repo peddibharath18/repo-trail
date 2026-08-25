@@ -1,110 +1,174 @@
 /* ========================================
-   Form Controls
+   Animation Utilities
    ======================================== */
 
-.form-control {
-  width: 100%;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
+/* ----------------------------------------
+   Keyframes
+   ---------------------------------------- */
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-
-/* ========================================
-   Form Field Sizing
-   ======================================== */
-
-.form-control-sm {
-  min-height: 32px;
-  padding: 0 var(--space-2);
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
 }
 
-.form-control-md {
-  min-height: 40px;
-  padding: 0 var(--space-3);
+@keyframes pulse {
+  50% {
+    opacity: 0.5;
+  }
 }
 
-.form-control-lg {
-  min-height: 48px;
-  padding: 0 var(--space-4);
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+  }
 }
 
+/* ----------------------------------------
+   Animation Presets
+   ---------------------------------------- */
 
-/* ========================================
-   Placeholder
-   ======================================== */
-
-.form-control::placeholder {
-  color: var(--color-text-muted);
-  opacity: 1;
+.animate-none {
+  animation: none;
 }
 
-
-/* ========================================
-   Disabled
-   ======================================== */
-
-.form-control:disabled {
-  cursor: not-allowed;
-  opacity: 0.6;
+.animate-spin {
+  animation: spin 1s linear infinite;
 }
 
-
-/* ========================================
-   Readonly
-   ======================================== */
-
-.form-control:read-only {
-  cursor: default;
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
 }
 
-
-/* ========================================
-   Select
-   ======================================== */
-
-.form-select {
-  width: 100%;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
-  cursor: pointer;
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
-
-/* ========================================
-   Checkbox / Radio
-   ======================================== */
-
-.form-check {
-  width: 1rem;
-  height: 1rem;
-  cursor: pointer;
+.animate-bounce {
+  animation: bounce 1s infinite;
 }
 
-.form-check:disabled {
-  cursor: not-allowed;
+/* ----------------------------------------
+   Animation Duration
+   ---------------------------------------- */
+
+.animate-duration-75 {
+  animation-duration: 75ms;
 }
 
-
-/* ========================================
-   Textarea
-   ======================================== */
-
-.form-textarea {
-  width: 100%;
-  min-height: 100px;
-  font: inherit;
-  color: inherit;
-  resize: vertical;
+.animate-duration-100 {
+  animation-duration: 100ms;
 }
 
+.animate-duration-150 {
+  animation-duration: 150ms;
+}
 
-/* ========================================
-   File Input
-   ======================================== */
+.animate-duration-200 {
+  animation-duration: 200ms;
+}
 
-.form-file {
-  font: inherit;
-  cursor: pointer;
+.animate-duration-300 {
+  animation-duration: 300ms;
+}
+
+.animate-duration-500 {
+  animation-duration: 500ms;
+}
+
+.animate-duration-700 {
+  animation-duration: 700ms;
+}
+
+.animate-duration-1000 {
+  animation-duration: 1000ms;
+}
+
+/* ----------------------------------------
+   Animation Timing Function
+   ---------------------------------------- */
+
+.animate-linear {
+  animation-timing-function: linear;
+}
+
+.animate-ease {
+  animation-timing-function: ease;
+}
+
+.animate-ease-in {
+  animation-timing-function: ease-in;
+}
+
+.animate-ease-out {
+  animation-timing-function: ease-out;
+}
+
+.animate-ease-in-out {
+  animation-timing-function: ease-in-out;
+}
+
+/* ----------------------------------------
+   Animation Iteration Count
+   ---------------------------------------- */
+
+.animate-once {
+  animation-iteration-count: 1;
+}
+
+.animate-twice {
+  animation-iteration-count: 2;
+}
+
+.animate-infinite {
+  animation-iteration-count: infinite;
+}
+
+/* ----------------------------------------
+   Animation Fill Mode
+   ---------------------------------------- */
+
+.animate-fill-none {
+  animation-fill-mode: none;
+}
+
+.animate-fill-forwards {
+  animation-fill-mode: forwards;
+}
+
+.animate-fill-backwards {
+  animation-fill-mode: backwards;
+}
+
+.animate-fill-both {
+  animation-fill-mode: both;
+}
+
+/* ----------------------------------------
+   Animation Play State
+   ---------------------------------------- */
+
+.animate-running {
+  animation-play-state: running;
+}
+
+.animate-paused {
+  animation-play-state: paused;
 }

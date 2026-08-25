@@ -1,57 +1,53 @@
 /* ========================================
+   Scroll & Snap Utilities
+   ======================================== */
+
+/* ----------------------------------------
    Scroll Behavior
-   ======================================== */
+   ---------------------------------------- */
 
-.scroll-auto {
-  scroll-behavior: auto;
-}
+.scroll-auto { scroll-behavior: auto; }
+.scroll-smooth { scroll-behavior: smooth; }
 
-.scroll-smooth {
-  scroll-behavior: smooth;
-}
+/* ----------------------------------------
+   Scroll Snap Type
+   ---------------------------------------- */
 
+.snap-none { scroll-snap-type: none; }
+.snap-x { scroll-snap-type: x var(--scroll-snap-strictness, proximity); }
+.snap-y { scroll-snap-type: y var(--scroll-snap-strictness, proximity); }
+.snap-both { scroll-snap-type: both var(--scroll-snap-strictness, proximity); }
 
-/* ========================================
-   Overscroll Behavior
-   ======================================== */
+/* ----------------------------------------
+   Scroll Snap Strictness
+   ---------------------------------------- */
 
-.overscroll-auto {
-  overscroll-behavior: auto;
-}
+.snap-proximity { --scroll-snap-strictness: proximity; }
+.snap-mandatory { --scroll-snap-strictness: mandatory; }
 
-.overscroll-contain {
-  overscroll-behavior: contain;
-}
+/* ----------------------------------------
+   Scroll Snap Alignment
+   ---------------------------------------- */
 
-.overscroll-none {
-  overscroll-behavior: none;
-}
+.snap-start { scroll-snap-align: start; }
+.snap-center { scroll-snap-align: center; }
+.snap-end { scroll-snap-align: end; }
+.snap-align-none { scroll-snap-align: none; }
 
+/* ----------------------------------------
+   Scroll Snap Stop
+   ---------------------------------------- */
 
-/* ========================================
-   Overscroll - Axis
-   ======================================== */
+.snap-normal { scroll-snap-stop: normal; }
+.snap-always { scroll-snap-stop: always; }
 
-.overscroll-x-auto {
-  overscroll-behavior-x: auto;
-}
+/* ----------------------------------------
+   Scroll Padding
+   ---------------------------------------- */
 
-.overscroll-x-contain {
-  overscroll-behavior-x: contain;
-}
-
-.overscroll-x-none {
-  overscroll-behavior-x: none;
-}
-
-.overscroll-y-auto {
-  overscroll-behavior-y: auto;
-}
-
-.overscroll-y-contain {
-  overscroll-behavior-y: contain;
-}
-
-.overscroll-y-none {
-  overscroll-behavior-y: none;
-}
+.scroll-p-0 { scroll-padding: 0; }
+.scroll-p-1 { scroll-padding: var(--space-1); }
+.scroll-p-2 { scroll-padding: var(--space-2); }
+.scroll-p-4 { scroll-padding: var(--space-4); }
+.scroll-p-6 { scroll-padding: var(--space-6); }
+.scroll-p-8 { scroll-padding: var(--space-8); }

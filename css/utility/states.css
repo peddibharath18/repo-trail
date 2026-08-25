@@ -1,9 +1,13 @@
 /* ========================================
-   Hover
+   State Utilities
    ======================================== */
 
+/* ----------------------------------------
+   Hover
+   ---------------------------------------- */
+
 .hover-opacity:hover {
-  opacity: 0.8;
+  opacity: var(--state-hover-opacity, 0.8);
 }
 
 .hover-underline:hover {
@@ -18,83 +22,119 @@
   transform: scale(1.05);
 }
 
-
-/* ========================================
+/* ----------------------------------------
    Focus
-   ======================================== */
+   ---------------------------------------- */
 
 .focus-outline:focus {
-  outline: 2px solid currentColor;
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
-.focus-outline-none:focus {
+.focus-none:focus {
   outline: none;
 }
 
-
-/* ========================================
+/* ----------------------------------------
    Focus Visible
-   ======================================== */
+   ---------------------------------------- */
 
 .focus-visible-outline:focus-visible {
-  outline: 2px solid currentColor;
+  outline: 2px solid var(--color-focus);
   outline-offset: 2px;
 }
 
+.focus-visible-none:focus-visible {
+  outline: none;
+}
 
-/* ========================================
+/* ----------------------------------------
    Active
-   ======================================== */
+   ---------------------------------------- */
 
 .active-opacity:active {
-  opacity: 0.7;
+  opacity: var(--state-active-opacity, 0.7);
 }
 
+.active-scale:active,
 .active-scale-95:active {
-  transform: scale(0.95);
+  transform: scale(0.98);
 }
 
-
-/* ========================================
+/* ----------------------------------------
    Disabled
-   ======================================== */
+   ---------------------------------------- */
 
 .disabled-opacity:disabled {
-  opacity: 0.5;
+  opacity: var(--state-disabled-opacity, 0.5);
+}
+
+.disabled-pointer:disabled {
+  pointer-events: none;
 }
 
 .disabled-cursor:disabled {
   cursor: not-allowed;
 }
 
-
-/* ========================================
+/* ----------------------------------------
    Checked
-   ======================================== */
+   ---------------------------------------- */
 
-.checked-opacity:checked {
-  opacity: 0.8;
+.checked-primary:checked {
+  accent-color: var(--color-primary);
 }
 
+.checked-success:checked {
+  accent-color: var(--color-success);
+}
 
-/* ========================================
+/* ----------------------------------------
+   Valid / Invalid
+   ---------------------------------------- */
+
+.valid-border:valid {
+  border-color: var(--color-success);
+}
+
+.invalid-border:invalid {
+  border-color: var(--color-danger);
+}
+
+/* ----------------------------------------
+   Required / Optional
+   ---------------------------------------- */
+
+.required-border:required {
+  border-color: var(--color-required, var(--color-danger));
+}
+
+/* ----------------------------------------
+   Readonly
+   ---------------------------------------- */
+
+.readonly-opacity:read-only {
+  opacity: var(--state-readonly-opacity, 0.7);
+}
+
+.readonly-cursor:read-only {
+  cursor: default;
+}
+
+/* ----------------------------------------
    Placeholder
-   ======================================== */
+   ---------------------------------------- */
 
-.placeholder-opacity::placeholder {
-  opacity: 0.6;
+.placeholder-muted::placeholder {
+  color: var(--color-text-muted);
+  opacity: 1;
 }
 
+/* ----------------------------------------
+   Selection
+   ---------------------------------------- */
 
-/* ========================================
-   First / Last Child
-   ======================================== */
-
-.first-no-border:first-child {
-  border-top: none;
-}
-
-.last-no-border:last-child {
-  border-bottom: none;
+.selection-primary::selection {
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
 }

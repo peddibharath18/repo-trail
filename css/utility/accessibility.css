@@ -1,6 +1,10 @@
 /* ========================================
-   Screen Reader Only
+   Accessibility Utilities
    ======================================== */
+
+/* ----------------------------------------
+   Screen Reader Only
+   ---------------------------------------- */
 
 .sr-only {
   position: absolute;
@@ -14,11 +18,6 @@
   border: 0;
 }
 
-
-/* ========================================
-   Screen Reader Only - Focusable
-   ======================================== */
-
 .sr-only-focusable:not(:focus):not(:focus-visible) {
   position: absolute;
   width: 1px;
@@ -31,19 +30,37 @@
   border: 0;
 }
 
+/* ----------------------------------------
+   Restore Screen Reader Only
+   ---------------------------------------- */
 
-/* ========================================
-   Focus
-   ======================================== */
+.not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
 
-.focus-outline-none:focus {
+/* ----------------------------------------
+   Focus Outline Utilities
+   ---------------------------------------- */
+
+.focus-outline:focus {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.focus-none:focus, .focus-outline-none:focus {
   outline: none;
 }
 
-
-/* ========================================
+/* ----------------------------------------
    Forced Colors
-   ======================================== */
+   ---------------------------------------- */
 
 .forced-color-adjust-auto {
   forced-color-adjust: auto;

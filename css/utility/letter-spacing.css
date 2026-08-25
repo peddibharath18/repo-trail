@@ -1,27 +1,10 @@
 /* ========================================
-   Letter Spacing
+   Letter Spacing Utilities
    ======================================== */
 
-.tracking-tighter {
-  letter-spacing: -0.05em;
-}
-
-.tracking-tight {
-  letter-spacing: -0.025em;
-}
-
-.tracking-normal {
-  letter-spacing: 0;
-}
-
-.tracking-wide {
-  letter-spacing: 0.025em;
-}
-
-.tracking-wider {
-  letter-spacing: 0.05em;
-}
-
-.tracking-widest {
-  letter-spacing: 0.1em;
-}
+.tracking-tighter { letter-spacing: var(--letter-spacing-tighter, -0.05em); }
+.tracking-tight { letter-spacing: var(--letter-spacing-tight, -0.025em); }
+.tracking-normal { letter-spacing: var(--letter-spacing-normal, 0); }
+.tracking-wide { letter-spacing: var(--letter-spacing-wide, 0.025em); }
+.tracking-wider { letter-spacing: var(--letter-spacing-wider, 0.05em); }
+.tracking-widest { letter-spacing: var(--letter-spacing-widest, 0.1em); }

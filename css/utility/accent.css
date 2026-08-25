@@ -1,0 +1,31 @@
+/* ========================================
+   Accent Color Utilities
+   ======================================== */
+
+.accent-auto {
+  accent-color: auto;
+}
+
+.accent-current {
+  accent-color: currentColor;
+}
+
+.accent-primary {
+  accent-color: var(--color-primary);
+}
+
+.accent-secondary {
+  accent-color: var(--color-secondary);
+}
+
+.accent-success {
+  accent-color: var(--color-success);
+}
+
+.accent-warning {
+  accent-color: var(--color-warning);
+}
+
+.accent-danger {
+  accent-color: var(--color-danger);
+}

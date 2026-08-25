@@ -1,11 +1,7 @@
 /* ========================================
-   Appearance
+   Appearance Utilities
    ======================================== */
 
-.appearance-none {
-  appearance: none;
-}
-
-.appearance-auto {
-  appearance: auto;
-}
+.appearance-auto { appearance: auto; }
+.appearance-none { appearance: none; }
+.appearance-button { appearance: button; }

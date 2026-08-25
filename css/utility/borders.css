@@ -1,40 +1,180 @@
 /* ========================================
-   Border
+   Border Utilities
    ======================================== */
 
-.border {
-  border: 1px solid var(--gray-200);
-}
-
-.border-none {
-  border: none;
-}
-
-
-/* ========================================
+/* ----------------------------------------
    Border Width
-   ======================================== */
+   ---------------------------------------- */
 
 .border-0 {
   border-width: 0;
 }
 
-.border-1 {
+.border {
   border-width: 1px;
+  border-style: solid;
+  border-color: var(--color-border);
 }
 
 .border-2 {
   border-width: 2px;
+  border-style: solid;
+  border-color: var(--color-border);
 }
 
 .border-4 {
   border-width: 4px;
+  border-style: solid;
+  border-color: var(--color-border);
 }
 
+/* ----------------------------------------
+   Border X Axis
+   ---------------------------------------- */
 
-/* ========================================
+.border-x {
+  border-inline-width: 1px;
+  border-inline-style: solid;
+  border-inline-color: var(--color-border);
+}
+
+.border-x-0 {
+  border-inline-width: 0;
+}
+
+.border-x-2 {
+  border-inline-width: 2px;
+  border-inline-style: solid;
+  border-inline-color: var(--color-border);
+}
+
+/* ----------------------------------------
+   Border Y Axis
+   ---------------------------------------- */
+
+.border-y {
+  border-block-width: 1px;
+  border-block-style: solid;
+  border-block-color: var(--color-border);
+}
+
+.border-y-0 {
+  border-block-width: 0;
+}
+
+.border-y-2 {
+  border-block-width: 2px;
+  border-block-style: solid;
+  border-block-color: var(--color-border);
+}
+
+/* ----------------------------------------
+   Border Top
+   ---------------------------------------- */
+
+.border-t {
+  border-top-width: 1px;
+  border-top-style: solid;
+  border-top-color: var(--color-border);
+}
+
+.border-t-0 {
+  border-top-width: 0;
+}
+
+.border-t-2 {
+  border-top-width: 2px;
+  border-top-style: solid;
+  border-top-color: var(--color-border);
+}
+
+/* ----------------------------------------
+   Border Right
+   ---------------------------------------- */
+
+.border-r {
+  border-right-width: 1px;
+  border-right-style: solid;
+  border-right-color: var(--color-border);
+}
+
+.border-r-0 {
+  border-right-width: 0;
+}
+
+.border-r-2 {
+  border-right-width: 2px;
+  border-right-style: solid;
+  border-right-color: var(--color-border);
+}
+
+/* ----------------------------------------
+   Border Bottom
+   ---------------------------------------- */
+
+.border-b {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-border);
+}
+
+.border-b-0 {
+  border-bottom-width: 0;
+}
+
+.border-b-2 {
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--color-border);
+}
+
+/* ----------------------------------------
+   Border Left
+   ---------------------------------------- */
+
+.border-l {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: var(--color-border);
+}
+
+.border-l-0 {
+  border-left-width: 0;
+}
+
+.border-l-2 {
+  border-left-width: 2px;
+  border-left-style: solid;
+  border-left-color: var(--color-border);
+}
+
+/* ----------------------------------------
+   Logical Border Start / End
+   ---------------------------------------- */
+
+.border-s {
+  border-inline-start-width: 1px;
+  border-inline-start-style: solid;
+  border-inline-start-color: var(--color-border);
+}
+
+.border-s-0 {
+  border-inline-start-width: 0;
+}
+
+.border-e {
+  border-inline-end-width: 1px;
+  border-inline-end-style: solid;
+  border-inline-end-color: var(--color-border);
+}
+
+.border-e-0 {
+  border-inline-end-width: 0;
+}
+
+/* ----------------------------------------
    Border Style
-   ======================================== */
+   ---------------------------------------- */
 
 .border-solid {
   border-style: solid;
@@ -48,62 +188,24 @@
   border-style: dotted;
 }
 
-
-/* ========================================
-   Border Color
-   ======================================== */
-
-.border-primary {
-  border-color: var(--primary);
+.border-double {
+  border-style: double;
 }
 
-.border-secondary {
-  border-color: var(--secondary);
+.border-none {
+  border-style: none;
 }
 
-.border-success {
-  border-color: var(--success);
-}
-
-.border-warning {
-  border-color: var(--warning);
-}
-
-.border-danger {
-  border-color: var(--danger);
-}
-
-.border-info {
-  border-color: var(--info);
-}
-
-.border-gray-100 {
-  border-color: var(--gray-100);
-}
-
-.border-gray-200 {
-  border-color: var(--gray-200);
-}
-
-.border-gray-300 {
-  border-color: var(--gray-300);
-}
-
-.border-gray-400 {
-  border-color: var(--gray-400);
-}
-
-.border-gray-500 {
-  border-color: var(--gray-500);
-}
-
-
-/* ========================================
+/* ----------------------------------------
    Border Radius
-   ======================================== */
+   ---------------------------------------- */
 
 .rounded-none {
   border-radius: var(--radius-none);
+}
+
+.rounded-xs {
+  border-radius: var(--radius-xs);
 }
 
 .rounded-sm {
@@ -111,6 +213,10 @@
 }
 
 .rounded {
+  border-radius: var(--radius-md);
+}
+
+.rounded-md {
   border-radius: var(--radius-md);
 }
 
@@ -122,6 +228,52 @@
   border-radius: var(--radius-xl);
 }
 
+.rounded-2xl {
+  border-radius: var(--radius-2xl);
+}
+
+.rounded-3xl {
+  border-radius: var(--radius-3xl);
+}
+
 .rounded-full {
   border-radius: var(--radius-full);
+}
+
+/* ----------------------------------------
+   Radius - Top / Bottom
+   ---------------------------------------- */
+
+.rounded-t {
+  border-start-start-radius: var(--radius-md);
+  border-start-end-radius: var(--radius-md);
+}
+
+.rounded-t-lg {
+  border-start-start-radius: var(--radius-lg);
+  border-start-end-radius: var(--radius-lg);
+}
+
+.rounded-b {
+  border-end-start-radius: var(--radius-md);
+  border-end-end-radius: var(--radius-md);
+}
+
+.rounded-b-lg {
+  border-end-start-radius: var(--radius-lg);
+  border-end-end-radius: var(--radius-lg);
+}
+
+/* ----------------------------------------
+   Radius - Start / End
+   ---------------------------------------- */
+
+.rounded-s {
+  border-start-start-radius: var(--radius-md);
+  border-end-start-radius: var(--radius-md);
+}
+
+.rounded-e {
+  border-start-end-radius: var(--radius-md);
+  border-end-end-radius: var(--radius-md);
 }

@@ -1,67 +1,21 @@
 /* ========================================
-   Mix Blend Mode
+   Mix Blend Mode Utilities
    ======================================== */
 
-.blend-normal {
-  mix-blend-mode: normal;
-}
-
-.blend-multiply {
-  mix-blend-mode: multiply;
-}
-
-.blend-screen {
-  mix-blend-mode: screen;
-}
-
-.blend-overlay {
-  mix-blend-mode: overlay;
-}
-
-.blend-darken {
-  mix-blend-mode: darken;
-}
-
-.blend-lighten {
-  mix-blend-mode: lighten;
-}
-
-.blend-color-dodge {
-  mix-blend-mode: color-dodge;
-}
-
-.blend-color-burn {
-  mix-blend-mode: color-burn;
-}
-
-.blend-hard-light {
-  mix-blend-mode: hard-light;
-}
-
-.blend-soft-light {
-  mix-blend-mode: soft-light;
-}
-
-.blend-difference {
-  mix-blend-mode: difference;
-}
-
-.blend-exclusion {
-  mix-blend-mode: exclusion;
-}
-
-.blend-hue {
-  mix-blend-mode: hue;
-}
-
-.blend-saturation {
-  mix-blend-mode: saturation;
-}
-
-.blend-color {
-  mix-blend-mode: color;
-}
-
-.blend-luminosity {
-  mix-blend-mode: luminosity;
-}
+.mix-normal, .blend-normal { mix-blend-mode: normal; }
+.mix-multiply, .blend-multiply { mix-blend-mode: multiply; }
+.mix-screen, .blend-screen { mix-blend-mode: screen; }
+.mix-overlay, .blend-overlay { mix-blend-mode: overlay; }
+.mix-darken, .blend-darken { mix-blend-mode: darken; }
+.mix-lighten, .blend-lighten { mix-blend-mode: lighten; }
+.mix-color-dodge, .blend-color-dodge { mix-blend-mode: color-dodge; }
+.mix-color-burn, .blend-color-burn { mix-blend-mode: color-burn; }
+.mix-hard-light, .blend-hard-light { mix-blend-mode: hard-light; }
+.mix-soft-light, .blend-soft-light { mix-blend-mode: soft-light; }
+.mix-difference, .blend-difference { mix-blend-mode: difference; }
+.mix-exclusion, .blend-exclusion { mix-blend-mode: exclusion; }
+.mix-hue, .blend-hue { mix-blend-mode: hue; }
+.mix-saturation, .blend-saturation { mix-blend-mode: saturation; }
+.mix-color, .blend-color { mix-blend-mode: color; }
+.mix-luminosity, .blend-luminosity { mix-blend-mode: luminosity; }
+.mix-plus-lighter { mix-blend-mode: plus-lighter; }

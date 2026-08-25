@@ -1,25 +1,71 @@
+/* ========================================
+   Color Tokens
+   ======================================== */
+
 :root {
-  /* Brand */
-  --primary: #4f46e5;
-  --secondary: #64748b;
+  /* ----------------------------------------
+     Brand
+     ---------------------------------------- */
+  --color-primary: #2563eb;
+  --color-primary-hover: #1d4ed8;
+  --color-primary-active: #1e40af;
 
-  /* Status */
-  --success: #16a34a;
-  --warning: #f59e0b;
-  --danger: #dc2626;
-  --info: #0284c7;
+  --color-secondary: #64748b;
+  --color-secondary-hover: #475569;
+  --color-secondary-active: #334155;
 
-  /* Neutral */
-  --white: #ffffff;
-  --black: #000000;
+  /* ----------------------------------------
+     Semantic
+     ---------------------------------------- */
+  --color-success: #16a34a;
+  --color-success-hover: #15803d;
 
-  --gray-100: #f8fafc;
-  --gray-200: #e2e8f0;
-  --gray-300: #cbd5e1;
-  --gray-400: #94a3b8;
-  --gray-500: #64748b;
-  --gray-600: #475569;
-  --gray-700: #334155;
-  --gray-800: #1e293b;
-  --gray-900: #0f172a;
+  --color-warning: #d97706;
+  --color-warning-hover: #b45309;
+
+  --color-danger: #dc2626;
+  --color-danger-hover: #b91c1c;
+
+  --color-info: #0284c7;
+  --color-info-hover: #0369a1;
+
+  /* ----------------------------------------
+     Background & Surface
+     ---------------------------------------- */
+  --color-background: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-secondary: #f8fafc;
+  --color-surface-tertiary: #f1f5f9;
+
+  /* ----------------------------------------
+     Text
+     ---------------------------------------- */
+  --color-text: #0f172a;
+  --color-text-secondary: #475569;
+  --color-text-muted: #64748b;
+  --color-text-disabled: #94a3b8;
+
+  /* ----------------------------------------
+     Border
+     ---------------------------------------- */
+  --color-border: #e2e8f0;
+  --color-border-secondary: #cbd5e1;
+  --color-border-focus: var(--color-primary);
+
+  /* ----------------------------------------
+     Neutral Palette
+     ---------------------------------------- */
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-300: #cbd5e1;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-700: #334155;
+  --color-gray-800: #1e293b;
+  --color-gray-900: #0f172a;
 }

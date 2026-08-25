@@ -2,9 +2,17 @@
    Print Utilities
    ======================================== */
 
+.print-only {
+  display: none !important;
+}
+
 @media print {
-  .print-hidden {
+  .print-hidden, .no-print {
     display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
   }
 
   .print-visible {
@@ -19,15 +27,15 @@
     display: inline-block !important;
   }
 
-  .print-break-before {
+  .print-break-before, .break-before {
     break-before: page;
   }
 
-  .print-break-after {
+  .print-break-after, .break-after {
     break-after: page;
   }
 
-  .print-break-inside-avoid {
+  .print-break-inside-avoid, .break-inside-avoid {
     break-inside: avoid;
   }
 

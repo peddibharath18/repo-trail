@@ -1,0 +1,20 @@
+/* ========================================
+   Text Wrap Utilities
+   ======================================== */
+
+.text-wrap {
+  text-wrap: wrap;
+}
+
+.text-nowrap {
+  text-wrap: nowrap;
+}
+
+.text-wrap-balance {
+  text-wrap: balance;
+}
+
+.text-wrap-pretty {
+  text-wrap: pretty;
+
+}

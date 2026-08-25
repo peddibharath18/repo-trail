@@ -1,11 +1,6 @@
 /* ========================================
-   Isolation
+   Isolation Utilities
    ======================================== */
 
-.isolate {
-  isolation: isolate;
-}
-
-.isolation-auto {
-  isolation: auto;
-}
+.isolate { isolation: isolate; }
+.isolation-auto { isolation: auto; }
