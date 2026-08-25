@@ -1,0 +1,72 @@
+/* ========================================
+   HTML & Body
+   ======================================== */
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-md);
+  font-weight: var(--font-regular);
+  line-height: var(--line-height-normal);
+  color: var(--gray-900);
+  background-color: var(--white);
+}
+
+
+/* ========================================
+   Links
+   ======================================== */
+
+a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* ========================================
+   Images
+   ======================================== */
+
+img {
+  height: auto;
+}
+
+
+/* ========================================
+   Buttons
+   ======================================== */
+
+button {
+  cursor: pointer;
+}
+
+
+/* ========================================
+   Disabled Elements
+   ======================================== */
+
+button:disabled,
+input:disabled,
+select:disabled,
+textarea:disabled {
+  cursor: not-allowed;
+}
+
+
+/* ========================================
+   Text Selection
+   ======================================== */
+
+::selection {
+  background-color: var(--primary);
+  color: var(--white);
+}

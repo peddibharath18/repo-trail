@@ -1,0 +1,143 @@
+/* ========================================
+   Font Size
+   ======================================== */
+
+.text-xs {
+  font-size: var(--font-xs);
+}
+
+.text-sm {
+  font-size: var(--font-sm);
+}
+
+.text-md {
+  font-size: var(--font-md);
+}
+
+.text-lg {
+  font-size: var(--font-lg);
+}
+
+.text-xl {
+  font-size: var(--font-xl);
+}
+
+.text-2xl {
+  font-size: var(--font-2xl);
+}
+
+.text-3xl {
+  font-size: var(--font-3xl);
+}
+
+.text-4xl {
+  font-size: var(--font-4xl);
+}
+
+
+/* ========================================
+   Font Weight
+   ======================================== */
+
+.fw-regular {
+  font-weight: var(--font-regular);
+}
+
+.fw-medium {
+  font-weight: var(--font-medium);
+}
+
+.fw-semibold {
+  font-weight: var(--font-semibold);
+}
+
+.fw-bold {
+  font-weight: var(--font-bold);
+}
+
+
+/* ========================================
+   Text Alignment
+   ======================================== */
+
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+
+/* ========================================
+   Line Height
+   ======================================== */
+
+.lh-tight {
+  line-height: var(--line-height-tight);
+}
+
+.lh-normal {
+  line-height: var(--line-height-normal);
+}
+
+.lh-relaxed {
+  line-height: var(--line-height-relaxed);
+}
+
+
+/* ========================================
+   Text Transform
+   ======================================== */
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+.text-lowercase {
+  text-transform: lowercase;
+}
+
+.text-capitalize {
+  text-transform: capitalize;
+}
+
+
+/* ========================================
+   Text Decoration
+   ======================================== */
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-none {
+  text-decoration: none;
+}
+
+
+/* ========================================
+   Text Overflow
+   ======================================== */
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+.text-wrap {
+  white-space: normal;
+
+}
+
+
+/* ========================================
+   Font Style
+   ======================================== */
+
+.text-italic {
+  font-style: italic;
+}
