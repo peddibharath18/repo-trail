@@ -1,0 +1,8 @@
+/* ========================================
+   User Select Utilities
+   ======================================== */
+
+.user-select-auto, .select-auto { user-select: auto; }
+.user-select-none, .select-none { user-select: none; }
+.user-select-text, .select-text { user-select: text; }
+.user-select-all, .select-all { user-select: all; }

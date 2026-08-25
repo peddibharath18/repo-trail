@@ -1,27 +1,10 @@
 /* ========================================
-   Line Height
+   Line Height Utilities
    ======================================== */
 
-.leading-none {
-  line-height: 1;
-}
-
-.leading-tight {
-  line-height: 1.25;
-}
-
-.leading-snug {
-  line-height: 1.375;
-}
-
-.leading-normal {
-  line-height: 1.5;
-}
-
-.leading-relaxed {
-  line-height: 1.625;
-}
-
-.leading-loose {
-  line-height: 2;
-}
+.leading-none, .lh-none { line-height: var(--line-height-none, 1); }
+.leading-tight, .lh-tight { line-height: var(--line-height-tight, 1.25); }
+.leading-snug, .lh-snug { line-height: var(--line-height-snug, 1.375); }
+.leading-normal, .lh-normal { line-height: var(--line-height-normal, 1.5); }
+.leading-relaxed, .lh-relaxed { line-height: var(--line-height-relaxed, 1.625); }
+.leading-loose, .lh-loose { line-height: var(--line-height-loose, 2); }

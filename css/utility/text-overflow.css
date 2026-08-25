@@ -1,40 +1,17 @@
 /* ========================================
-   Text Overflow
+   Text Overflow Utilities
    ======================================== */
 
-.text-ellipsis {
-  overflow: hidden;
+.text-ellipsis, .text-overflow-ellipsis {
   text-overflow: ellipsis;
-  white-space: nowrap;
 }
 
-.text-clip {
-  overflow: hidden;
+.text-clip, .text-overflow-clip {
   text-overflow: clip;
 }
 
-
-/* ========================================
-   Multi-line Truncation
-   ======================================== */
-
-.line-clamp-2 {
-  display: -webkit-box;
+.truncate {
   overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-
-.line-clamp-3 {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
-}
-
-.line-clamp-4 {
-  display: -webkit-box;
-  overflow: hidden;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 4;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

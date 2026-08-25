@@ -1,45 +1,33 @@
 /* ========================================
-   Content Visibility
+   Content & Contain Utilities
    ======================================== */
 
-.content-visible {
-  content-visibility: visible;
-}
+/* ----------------------------------------
+   Generated Content
+   ---------------------------------------- */
 
-.content-hidden {
-  content-visibility: hidden;
+.content-none { content: none; }
+.content-empty { content: ""; }
+.content-normal { content: normal; }
 
-}
+.before-content-empty::before { content: ""; }
+.after-content-empty::after { content: ""; }
 
-.content-auto {
-  content-visibility: auto;
-}
-
-
-/* ========================================
+/* ----------------------------------------
    Contain
-   ======================================== */
+   ---------------------------------------- */
 
-.contain-none {
-  contain: none;
-}
+.contain-none { contain: none; }
+.contain-layout { contain: layout; }
+.contain-paint { contain: paint; }
+.contain-size { contain: size; }
+.contain-content { contain: content; }
+.contain-strict { contain: strict; }
 
-.contain-layout {
-  contain: layout;
-}
+/* ----------------------------------------
+   Content Visibility
+   ---------------------------------------- */
 
-.contain-paint {
-  contain: paint;
-}
-
-.contain-size {
-  contain: size;
-}
-
-.contain-content {
-  contain: content;
-}
-
-.contain-strict {
-  contain: strict;
-}
+.content-visible { content-visibility: visible; }
+.content-auto { content-visibility: auto; }
+.content-hidden { content-visibility: hidden; }

@@ -1,110 +1,198 @@
 /* ========================================
-   Form Controls
+   Form Utilities
    ======================================== */
+
+/* ----------------------------------------
+   Form Controls
+   ---------------------------------------- */
 
 .form-control {
+  display: block;
   width: 100%;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
+  padding: var(--space-2) var(--space-3);
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  transition: border-color 150ms ease, box-shadow 150ms ease;
 }
 
-
-/* ========================================
-   Form Field Sizing
-   ======================================== */
-
-.form-control-sm {
-  min-height: 32px;
-  padding: 0 var(--space-2);
+.form-control:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 0.15);
 }
-
-.form-control-md {
-  min-height: 40px;
-  padding: 0 var(--space-3);
-}
-
-.form-control-lg {
-  min-height: 48px;
-  padding: 0 var(--space-4);
-}
-
-
-/* ========================================
-   Placeholder
-   ======================================== */
 
 .form-control::placeholder {
   color: var(--color-text-muted);
   opacity: 1;
 }
 
-
-/* ========================================
-   Disabled
-   ======================================== */
-
 .form-control:disabled {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-text-disabled);
   cursor: not-allowed;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
-
-/* ========================================
-   Readonly
-   ======================================== */
-
 .form-control:read-only {
+  background-color: var(--color-surface-secondary);
   cursor: default;
 }
 
+/* ----------------------------------------
+   Form Field Sizing
+   ---------------------------------------- */
 
-/* ========================================
-   Select
-   ======================================== */
+.form-control-sm {
+  min-height: 32px;
+  padding: var(--space-1) var(--space-2);
+  font-size: var(--font-size-sm);
+  border-radius: var(--radius-sm);
+}
+
+.form-control-md {
+  min-height: 40px;
+  padding: var(--space-2) var(--space-3);
+  font-size: var(--font-size-md);
+  border-radius: var(--radius-md);
+}
+
+.form-control-lg {
+  min-height: 48px;
+  padding: var(--space-3) var(--space-4);
+  font-size: var(--font-size-lg);
+  border-radius: var(--radius-lg);
+}
+
+/* ----------------------------------------
+   Form Select
+   ---------------------------------------- */
 
 .form-select {
+  display: block;
   width: 100%;
-  font: inherit;
-  color: inherit;
-  background-color: transparent;
+  padding: var(--space-2) var(--space-8) var(--space-2) var(--space-3);
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   cursor: pointer;
 }
 
-
-/* ========================================
-   Checkbox / Radio
-   ======================================== */
-
-.form-check {
-  width: 1rem;
-  height: 1rem;
-  cursor: pointer;
+.form-select:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 0.15);
 }
 
-.form-check:disabled {
+.form-select:disabled {
+  background-color: var(--color-surface-secondary);
+  color: var(--color-text-disabled);
   cursor: not-allowed;
 }
 
+/* ----------------------------------------
+   Checkbox & Radio
+   ---------------------------------------- */
 
-/* ========================================
+.form-check {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  cursor: pointer;
+}
+
+.form-check-input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--color-primary);
+  cursor: pointer;
+}
+
+.form-check-input:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+/* ----------------------------------------
    Textarea
-   ======================================== */
+   ---------------------------------------- */
 
 .form-textarea {
+  display: block;
   width: 100%;
   min-height: 100px;
-  font: inherit;
-  color: inherit;
+  padding: var(--space-2) var(--space-3);
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-normal);
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
   resize: vertical;
 }
 
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgb(37 99 235 / 0.15);
+}
 
-/* ========================================
+/* ----------------------------------------
    File Input
-   ======================================== */
+   ---------------------------------------- */
 
 .form-file {
-  font: inherit;
+  display: block;
+  width: 100%;
+  font-family: inherit;
+  font-size: var(--font-size-md);
+  color: var(--color-text-secondary);
   cursor: pointer;
+}
+
+/* ----------------------------------------
+   Form Validation States
+   ---------------------------------------- */
+
+.form-control.is-valid,
+.form-select.is-valid {
+  border-color: var(--color-success);
+}
+
+.form-control.is-valid:focus,
+.form-select.is-valid:focus {
+  box-shadow: 0 0 0 3px rgb(22 163 74 / 0.15);
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: var(--color-danger);
+}
+
+.form-control.is-invalid:focus,
+.form-select.is-invalid:focus {
+  box-shadow: 0 0 0 3px rgb(220 38 38 / 0.15);
+}
+
+.form-label {
+  display: inline-block;
+  margin-bottom: var(--space-1);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.form-text {
+  margin-top: var(--space-1);
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
 }

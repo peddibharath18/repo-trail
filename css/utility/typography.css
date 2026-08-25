@@ -1,143 +1,138 @@
 /* ========================================
+   Typography Utilities
+   ======================================== */
+
+/* ----------------------------------------
+   Font Family
+   ---------------------------------------- */
+
+.font-sans {
+  font-family: var(--font-family-sans);
+}
+
+.font-serif {
+  font-family: var(--font-family-serif);
+}
+
+.font-mono {
+  font-family: var(--font-family-mono);
+}
+
+/* ----------------------------------------
    Font Size
-   ======================================== */
+   ---------------------------------------- */
 
-.text-xs {
-  font-size: var(--font-xs);
-}
+.text-xs { font-size: var(--font-size-xs); }
+.text-sm { font-size: var(--font-size-sm); }
+.text-md { font-size: var(--font-size-md); }
+.text-lg { font-size: var(--font-size-lg); }
+.text-xl { font-size: var(--font-size-xl); }
+.text-2xl { font-size: var(--font-size-2xl); }
+.text-3xl { font-size: var(--font-size-3xl); }
+.text-4xl { font-size: var(--font-size-4xl); }
+.text-5xl { font-size: var(--font-size-5xl); }
+.text-6xl { font-size: var(--font-size-6xl); }
 
-.text-sm {
-  font-size: var(--font-sm);
-}
-
-.text-md {
-  font-size: var(--font-md);
-}
-
-.text-lg {
-  font-size: var(--font-lg);
-}
-
-.text-xl {
-  font-size: var(--font-xl);
-}
-
-.text-2xl {
-  font-size: var(--font-2xl);
-}
-
-.text-3xl {
-  font-size: var(--font-3xl);
-}
-
-.text-4xl {
-  font-size: var(--font-4xl);
-}
-
-
-/* ========================================
+/* ----------------------------------------
    Font Weight
-   ======================================== */
+   ---------------------------------------- */
 
-.fw-regular {
-  font-weight: var(--font-regular);
-}
+.font-light, .fw-light { font-weight: var(--font-weight-light); }
+.font-normal, .fw-normal, .fw-regular { font-weight: var(--font-weight-normal); }
+.font-medium, .fw-medium { font-weight: var(--font-weight-medium); }
+.font-semibold, .fw-semibold { font-weight: var(--font-weight-semibold); }
+.font-bold, .fw-bold { font-weight: var(--font-weight-bold); }
+.font-extrabold, .fw-extrabold { font-weight: var(--font-weight-extrabold); }
 
-.fw-medium {
-  font-weight: var(--font-medium);
-}
-
-.fw-semibold {
-  font-weight: var(--font-semibold);
-}
-
-.fw-bold {
-  font-weight: var(--font-bold);
-}
-
-
-/* ========================================
-   Text Alignment
-   ======================================== */
-
-.text-left {
-  text-align: left;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.text-right {
-  text-align: right;
-}
-
-
-/* ========================================
+/* ----------------------------------------
    Line Height
-   ======================================== */
+   ---------------------------------------- */
 
-.lh-tight {
-  line-height: var(--line-height-tight);
-}
+.leading-none, .lh-none { line-height: var(--line-height-none); }
+.leading-tight, .lh-tight { line-height: var(--line-height-tight); }
+.leading-snug, .lh-snug { line-height: var(--line-height-snug); }
+.leading-normal, .lh-normal { line-height: var(--line-height-normal); }
+.leading-relaxed, .lh-relaxed { line-height: var(--line-height-relaxed); }
+.leading-loose, .lh-loose { line-height: var(--line-height-loose); }
 
-.lh-normal {
-  line-height: var(--line-height-normal);
-}
+/* ----------------------------------------
+   Letter Spacing (Tracking)
+   ---------------------------------------- */
 
-.lh-relaxed {
-  line-height: var(--line-height-relaxed);
-}
+.tracking-tighter { letter-spacing: var(--letter-spacing-tighter); }
+.tracking-tight { letter-spacing: var(--letter-spacing-tight); }
+.tracking-normal { letter-spacing: var(--letter-spacing-normal); }
+.tracking-wide { letter-spacing: var(--letter-spacing-wide); }
+.tracking-wider { letter-spacing: var(--letter-spacing-wider); }
+.tracking-widest { letter-spacing: var(--letter-spacing-widest); }
 
+/* ----------------------------------------
+   Text Alignment
+   ---------------------------------------- */
 
-/* ========================================
+.text-left { text-align: left; }
+.text-center { text-align: center; }
+.text-right { text-align: right; }
+.text-justify { text-align: justify; }
+.text-start { text-align: start; }
+.text-end { text-align: end; }
+
+/* ----------------------------------------
    Text Transform
-   ======================================== */
+   ---------------------------------------- */
 
-.text-uppercase {
-  text-transform: uppercase;
-}
+.uppercase, .text-uppercase { text-transform: uppercase; }
+.lowercase, .text-lowercase { text-transform: lowercase; }
+.capitalize, .text-capitalize { text-transform: capitalize; }
+.normal-case, .text-normal-case { text-transform: none; }
 
-.text-lowercase {
-  text-transform: lowercase;
-}
+/* ----------------------------------------
+   Font Style
+   ---------------------------------------- */
 
-.text-capitalize {
-  text-transform: capitalize;
-}
+.italic, .text-italic { font-style: italic; }
+.not-italic { font-style: normal; }
 
+/* ----------------------------------------
+   Text Overflow & Truncate
+   ---------------------------------------- */
 
-/* ========================================
-   Text Decoration
-   ======================================== */
-
-.text-underline {
-  text-decoration: underline;
-}
-
-.text-none {
-  text-decoration: none;
-}
-
-
-/* ========================================
-   Text Overflow
-   ======================================== */
-
-.text-nowrap {
+.truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
   white-space: nowrap;
 }
 
-.text-wrap {
-  white-space: normal;
+.text-ellipsis { text-overflow: ellipsis; }
+.text-clip { text-overflow: clip; }
 
+/* ----------------------------------------
+   White Space
+   ---------------------------------------- */
+
+.whitespace-normal { white-space: normal; }
+.whitespace-nowrap { white-space: nowrap; }
+.whitespace-pre { white-space: pre; }
+.whitespace-pre-line { white-space: pre-line; }
+.whitespace-pre-wrap { white-space: pre-wrap; }
+
+/* ----------------------------------------
+   Word Breaking
+   ---------------------------------------- */
+
+.break-normal {
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
+.break-words {
+  overflow-wrap: break-word;
+}
 
-/* ========================================
-   Font Style
-   ======================================== */
+.break-all {
+  word-break: break-all;
+}
 
-.text-italic {
-  font-style: italic;
+.break-keep {
+  word-break: keep-all;
 }

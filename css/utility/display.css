@@ -1,31 +1,18 @@
 /* ========================================
-   Display
+   Display Utilities
    ======================================== */
 
-.d-none {
-  display: none;
-}
-
-.d-block {
-  display: block;
-}
-
-.d-inline {
-  display: inline;
-}
-
-.d-inline-block {
-  display: inline-block;
-}
-
-.d-flex {
-  display: flex;
-}
-
-.d-inline-flex {
-  display: inline-flex;
-}
-
-.d-grid {
-  display: grid;
-}
+.d-none, .hidden { display: none; }
+.d-block, .block { display: block; }
+.d-inline, .inline { display: inline; }
+.d-inline-block, .inline-block { display: inline-block; }
+.d-flex, .flex { display: flex; }
+.d-inline-flex, .inline-flex { display: inline-flex; }
+.d-grid, .grid { display: grid; }
+.d-inline-grid, .inline-grid { display: inline-grid; }
+.d-table, .table { display: table; }
+.d-table-row, .table-row { display: table-row; }
+.d-table-cell, .table-cell { display: table-cell; }
+.d-contents, .contents { display: contents; }
+.d-list-item, .list-item { display: list-item; }
+.d-flow-root, .flow-root { display: flow-root; }

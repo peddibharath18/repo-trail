@@ -1,0 +1,105 @@
+/* ========================================
+   SVG Utilities
+   ======================================== */
+
+
+/* ========================================
+   Fill
+   ======================================== */
+
+.fill-none {
+  fill: none;
+}
+
+.fill-current {
+  fill: currentColor;
+}
+
+.fill-transparent {
+  fill: transparent;
+}
+
+
+/* ========================================
+   Stroke
+   ======================================== */
+
+.stroke-none {
+  stroke: none;
+}
+
+.stroke-current {
+  stroke: currentColor;
+}
+
+.stroke-transparent {
+  stroke: transparent;
+}
+
+
+/* ========================================
+   Stroke Width
+   ======================================== */
+
+.stroke-0 {
+  stroke-width: 0;
+}
+
+.stroke-1 {
+  stroke-width: 1;
+}
+
+.stroke-2 {
+  stroke-width: 2;
+}
+
+.stroke-3 {
+  stroke-width: 3;
+}
+
+
+/* ========================================
+   Stroke Linecap
+   ======================================== */
+
+.stroke-linecap-butt {
+  stroke-linecap: butt;
+}
+
+.stroke-linecap-round {
+  stroke-linecap: round;
+}
+
+.stroke-linecap-square {
+  stroke-linecap: square;
+}
+
+
+/* ========================================
+   Stroke Linejoin
+   ======================================== */
+
+.stroke-linejoin-miter {
+  stroke-linejoin: miter;
+}
+
+.stroke-linejoin-round {
+  stroke-linejoin: round;
+}
+
+.stroke-linejoin-bevel {
+  stroke-linejoin: bevel;
+}
+
+
+/* ========================================
+   Vector Effect
+   ======================================== */
+
+.vector-effect-none {
+  vector-effect: none;
+}
+
+.vector-effect-non-scaling-stroke {
+  vector-effect: non-scaling-stroke;
+}

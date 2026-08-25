@@ -1,0 +1,74 @@
+/* ========================================
+   Break / Fragmentation Utilities
+   ======================================== */
+
+
+/* ========================================
+   Break Before
+   ======================================== */
+
+.break-before-auto {
+  break-before: auto;
+}
+
+.break-before-avoid {
+  break-before: avoid;
+}
+
+.break-before-all {
+  break-before: all;
+}
+
+.break-before-page {
+  break-before: page;
+}
+
+.break-before-column {
+  break-before: column;
+}
+
+
+/* ========================================
+   Break After
+   ======================================== */
+
+.break-after-auto {
+  break-after: auto;
+}
+
+.break-after-avoid {
+  break-after: avoid;
+}
+
+.break-after-all {
+  break-after: all;
+}
+
+.break-after-page {
+  break-after: page;
+}
+
+.break-after-column {
+  break-after: column;
+}
+
+
+/* ========================================
+   Break Inside
+   ======================================== */
+
+.break-inside-auto {
+  break-inside: auto;
+}
+
+.break-inside-avoid {
+  break-inside: avoid;
+}
+
+.break-inside-avoid-page {
+  break-inside: avoid-page;
+}
+
+.break-inside-avoid-column {
+  break-inside: avoid-column;
+}

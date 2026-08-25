@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Framework Verification & Showcase</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <style>
+    /* Demo-only page layout container */
+    .demo-wrapper {
+      max-width: 1100px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: var(--space-6);
+    }
+  </style>
+</head>
+<body>
+  <div class="demo-wrapper">
+    <!-- Header -->
+    <header class="mb-8 border-b pb-4 flex justify-between items-center">
+      <div>
+        <h1 class="text-3xl font-bold text-primary">CSS Framework Showcase</h1>
+        <p class="text-secondary mt-1">Verification test page demonstrating standardized design tokens, utilities, and components.</p>
+      </div>
+      <button id="themeToggle" class="form-control-md bg-surface-secondary border rounded-md px-4 py-2 font-medium cursor-pointer hover-opacity" onclick="toggleTheme()">
+        🌙 Toggle Dark Mode
+      </button>
+    </header>
+
+    <!-- 1. Typography & Colors -->
+    <section class="mb-8 p-6 bg-surface border rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">1. Typography & Colors</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div>
+          <h3 class="text-xl font-medium mb-2">Heading Scale</h3>
+          <p class="text-3xl font-bold text-primary">H1 / 3xl Primary Text</p>
+          <p class="text-2xl font-semibold text-secondary">H2 / 2xl Secondary Text</p>
+          <p class="text-xl font-medium text-success">H3 / xl Success Text</p>
+          <p class="text-lg font-normal text-warning">H4 / lg Warning Text</p>
+          <p class="text-sm text-muted">Small muted caption text</p>
+        </div>
+        <div>
+          <h3 class="text-xl font-medium mb-2">Color Palette Badges</h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 bg-primary text-white rounded-full text-xs font-semibold">Primary</span>
+            <span class="px-3 py-1 bg-secondary text-white rounded-full text-xs font-semibold">Secondary</span>
+            <span class="px-3 py-1 bg-success text-white rounded-full text-xs font-semibold">Success</span>
+            <span class="px-3 py-1 bg-warning text-white rounded-full text-xs font-semibold">Warning</span>
+            <span class="px-3 py-1 bg-danger text-white rounded-full text-xs font-semibold">Danger</span>
+            <span class="px-3 py-1 bg-info text-white rounded-full text-xs font-semibold">Info</span>
+            <span class="px-3 py-1 bg-surface-secondary text-secondary border rounded-full text-xs font-semibold">Surface</span>
+          </div>
+          <div class="mt-4">
+            <p class="text-sm"><span class="font-bold">Inline elements:</span> <mark>Highlighted mark</mark>, <code>inline code</code>, <kbd>Ctrl + C</kbd>, <del>deleted</del>, <ins>inserted</ins>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Grid & Flexbox Layouts -->
+    <section class="mb-8 p-6 bg-surface border rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">2. Grid & Responsive Layout</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="p-4 bg-surface-secondary border rounded-md text-center">
+          <p class="font-bold text-primary">Col 1</p>
+          <p class="text-xs text-muted">Responsive 1 to 4 cols</p>
+        </div>
+        <div class="p-4 bg-surface-secondary border rounded-md text-center">
+          <p class="font-bold text-primary">Col 2</p>
+          <p class="text-xs text-muted">Auto gap & alignment</p>
+        </div>
+        <div class="p-4 bg-surface-secondary border rounded-md text-center">
+          <p class="font-bold text-primary">Col 3</p>
+          <p class="text-xs text-muted">rem-based spacing</p>
+        </div>
+        <div class="p-4 bg-surface-secondary border rounded-md text-center">
+          <p class="font-bold text-primary">Col 4</p>
+          <p class="text-xs text-muted">Clean borders & radius</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Form Controls -->
+    <section class="mb-8 p-6 bg-surface border rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">3. Form Controls & Validation</h2>
+      <form class="grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="event.preventDefault();">
+        <div>
+          <label class="form-label" for="username">Username</label>
+          <input id="username" type="text" class="form-control" placeholder="Enter username...">
+          <span class="form-text">Your public display identifier</span>
+        </div>
+        <div>
+          <label class="form-label" for="roleSelect">Role Selection</label>
+          <select id="roleSelect" class="form-select">
+            <option>Admin</option>
+            <option>Editor</option>
+            <option>Viewer</option>
+          </select>
+        </div>
+        <div>
+          <label class="form-label" for="validInput">Valid Field</label>
+          <input id="validInput" type="text" class="form-control is-valid" value="Valid entry">
+        </div>
+        <div>
+          <label class="form-label" for="invalidInput">Invalid Field</label>
+          <input id="invalidInput" type="text" class="form-control is-invalid" value="Invalid entry">
+        </div>
+        <div class="col-span-full">
+          <label class="form-label" for="bioText">Bio (Textarea)</label>
+          <textarea id="bioText" class="form-textarea" placeholder="Tell us about yourself..."></textarea>
+        </div>
+        <div class="col-span-full flex items-center gap-4">
+          <label class="form-check">
+            <input type="checkbox" class="form-check-input" checked>
+            <span class="text-sm">I agree to the terms</span>
+          </label>
+          <label class="form-check">
+            <input type="radio" name="plan" class="form-check-input" checked>
+            <span class="text-sm">Standard</span>
+          </label>
+          <label class="form-check">
+            <input type="radio" name="plan" class="form-check-input">
+            <span class="text-sm">Pro</span>
+          </label>
+        </div>
+      </form>
+    </section>
+
+    <!-- 4. Tables -->
+    <section class="mb-8 p-6 bg-surface border rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">4. Table Utilities</h2>
+      <div class="overflow-x-auto">
+        <table class="table-auto w-full border-collapse">
+          <thead>
+            <tr class="bg-surface-secondary border-b text-start">
+              <th class="p-3 text-start font-semibold text-secondary">#</th>
+              <th class="p-3 text-start font-semibold text-secondary">Module</th>
+              <th class="p-3 text-start font-semibold text-secondary">Layer</th>
+              <th class="p-3 text-start font-semibold text-secondary">Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-b hover-opacity">
+              <td class="p-3">1</td>
+              <td class="p-3 font-medium">Design Tokens</td>
+              <td class="p-3"><code class="text-xs">@layer tokens</code></td>
+              <td class="p-3"><span class="px-2 py-0-5 bg-success text-white rounded text-xs">Standardized</span></td>
+            </tr>
+            <tr class="border-b hover-opacity">
+              <td class="p-3">2</td>
+              <td class="p-3 font-medium">CSS Reset & Base</td>
+              <td class="p-3"><code class="text-xs">@layer reset, base</code></td>
+              <td class="p-3"><span class="px-2 py-0-5 bg-success text-white rounded text-xs">Cleaned</span></td>
+            </tr>
+            <tr class="border-b hover-opacity">
+              <td class="p-3">3</td>
+              <td class="p-3 font-medium">Utilities (66 files)</td>
+              <td class="p-3"><code class="text-xs">@layer utilities</code></td>
+              <td class="p-3"><span class="px-2 py-0-5 bg-success text-white rounded text-xs">Active</span></td>
+            </tr>
+            <tr class="hover-opacity">
+              <td class="p-3">4</td>
+              <td class="p-3 font-medium">Responsive Breakpoints</td>
+              <td class="p-3"><code class="text-xs">@layer responsive</code></td>
+              <td class="p-3"><span class="px-2 py-0-5 bg-success text-white rounded text-xs">Verified</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 5. Animations & Effects -->
+    <section class="mb-8 p-6 bg-surface border rounded-lg shadow-sm">
+      <h2 class="text-2xl font-semibold mb-4 border-b pb-2">5. Animations, Shadows & Micro-interactions</h2>
+      <div class="flex flex-wrap items-center gap-6">
+        <div class="flex items-center gap-2">
+          <div class="size-6 border-2 border-primary border-t-transparent rounded-full animate-spin"></div>
+          <span class="text-sm">Spinning loader</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="size-4 bg-success rounded-full animate-ping"></div>
+          <span class="text-sm">Ping indicator</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="px-4 py-2 bg-primary text-white rounded-md animate-pulse">
+            Pulsing Button
+          </div>
+        </div>
+        <div class="p-4 bg-surface border rounded-lg shadow-lg hover-scale-105 transition cursor-pointer">
+          <span class="text-sm font-semibold">Hover Scale & Shadow Card</span>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const html = document.documentElement;
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      document.getElementById('themeToggle').innerText = next === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+    }
+  </script>
+</body>
+</html>

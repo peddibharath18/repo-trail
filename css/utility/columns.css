@@ -1,0 +1,163 @@
+/* ========================================
+   Multi-Column Layout Utilities
+   ======================================== */
+
+/* ----------------------------------------
+   Column Count
+   ---------------------------------------- */
+
+.columns-1 {
+  columns: 1;
+}
+
+.columns-2 {
+  columns: 2;
+}
+
+.columns-3 {
+  columns: 3;
+}
+
+.columns-4 {
+  columns: 4;
+}
+
+.columns-5 {
+  columns: 5;
+}
+
+.columns-6 {
+  columns: 6;
+}
+
+/* ----------------------------------------
+   Column Width
+   ---------------------------------------- */
+
+.columns-auto {
+  column-width: auto;
+}
+
+.columns-xs {
+  column-width: 16rem;
+}
+
+.columns-sm {
+  column-width: 20rem;
+}
+
+.columns-md {
+  column-width: 24rem;
+}
+
+.columns-lg {
+  column-width: 28rem;
+}
+
+.columns-xl {
+  column-width: 32rem;
+}
+
+/* ----------------------------------------
+   Column Gap
+   ---------------------------------------- */
+
+.column-gap-0 {
+  column-gap: 0;
+}
+
+.column-gap-1 {
+  column-gap: var(--space-1);
+}
+
+.column-gap-2 {
+  column-gap: var(--space-2);
+}
+
+.column-gap-4 {
+  column-gap: var(--space-4);
+}
+
+.column-gap-6 {
+  column-gap: var(--space-6);
+}
+
+.column-gap-8 {
+  column-gap: var(--space-8);
+}
+
+/* ----------------------------------------
+   Column Rule Width
+   ---------------------------------------- */
+
+.column-rule-0 {
+  column-rule-width: 0;
+}
+
+.column-rule {
+  column-rule-width: 1px;
+}
+
+.column-rule-2 {
+  column-rule-width: 2px;
+}
+
+/* ----------------------------------------
+   Column Rule Style
+   ---------------------------------------- */
+
+.column-rule-solid {
+  column-rule-style: solid;
+}
+
+.column-rule-dashed {
+  column-rule-style: dashed;
+}
+
+.column-rule-dotted {
+  column-rule-style: dotted;
+}
+
+.column-rule-double {
+  column-rule-style: double;
+}
+
+.column-rule-none {
+  column-rule-style: none;
+}
+
+/* ----------------------------------------
+   Column Rule Color
+   ---------------------------------------- */
+
+.column-rule-current {
+  column-rule-color: currentColor;
+}
+
+.column-rule-transparent {
+  column-rule-color: transparent;
+}
+
+/* ----------------------------------------
+   Column Span
+   ---------------------------------------- */
+
+.column-span-none {
+  column-span: none;
+}
+
+.column-span-all {
+  column-span: all;
+}
+
+/* ----------------------------------------
+   Column Fill
+   ---------------------------------------- */
+
+.column-fill-auto {
+  column-fill: auto;
+}
+
+.column-fill-balance {
+  column-fill: balance;
+}
